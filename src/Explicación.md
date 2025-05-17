@@ -62,3 +62,21 @@ Este proyecto evalúa el rendimiento y la facilidad de uso de ejecutar **Chocola
     A --> C[🖥️ VirtualBox VM - Ubuntu - Doom]
     B --> D[🎮 Chocolate Doom (SDL en terminal)]
     C --> E[🎮 Chocolate Doom (interfaz X11)]
+
+
+
+---
+
+## 🧾 Conclusión
+
+Tras comparar el rendimiento de **Chocolate DOOM** ejecutado mediante Docker (WSL2) y dentro de una máquina virtual (VirtualBox Ubuntu), llegamos a una conclusión clara:
+
+> **Docker es significativamente más eficiente en tiempo de arranque y uso de recursos**, incluso cuando ambas plataformas utilizan la misma imagen de contenedor. 
+
+- 🚀 Docker arranca DOOM en apenas ~1 segundo.
+- 📉 Usa menos de 50 MB de RAM.
+- ⚙️ El entorno es más fácil de configurar, mantener y portar.
+
+Aunque la máquina virtual ofrece mayor aislamiento, su complejidad y sobrecarga de recursos no justifican su uso para aplicaciones ligeras como DOOM. Por tanto, **Docker es la opción más práctica para este tipo de proyectos**.
+
+---
